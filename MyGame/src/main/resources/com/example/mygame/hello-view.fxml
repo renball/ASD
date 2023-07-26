@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="519.0" prefWidth="793.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mygame.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="397.0" prefWidth="647.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="370.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="72.0" />
+         <Line endX="-65.0" endY="272.0" layoutX="632.0" layoutY="125.0" startX="-65.0" startY="-125.0" />
+         <Line endX="18.0" endY="212.0" layoutX="453.0" layoutY="185.0" startX="18.0" startY="-185.0" />
+         <Circle fx:id="target1" fill="#ff1f1f" layoutX="472.0" layoutY="198.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+         <Circle fx:id="target2" fill="#ff1f1f" layoutX="567.0" layoutY="199.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+         <Line fx:id="shaft" endX="-20.0" layoutX="161.0" layoutY="199.0" startX="-100.0" />
+         <Polygon fx:id="tip" layoutX="168.0" layoutY="199.0" points="-65.0, -14.0, -65.0, 12.0, -26.5, -0.5" stroke="BLACK" strokeType="INSIDE" />
+         <Pane layoutX="591.0" prefHeight="387.0" prefWidth="154.0">
+            <children>
+               <Text fx:id="score" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scores: 0" wrappingWidth="99.13671875" />
+            </children></Pane>
+      </children>
+   </Pane>
+   <Pane prefHeight="67.0" prefWidth="753.0">
+      <children>
+         <Button fx:id="start" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#targetsMove" prefHeight="48.0" prefWidth="132.0" text="Start" />
+         <Button fx:id="stop" layoutX="172.0" layoutY="10.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="132.0" text="Stop" />
+         <Button fx:id="fire" layoutX="332.0" layoutY="10.0" mnemonicParsing="false" onAction="#fireArrow" prefHeight="48.0" prefWidth="132.0" text="Fire" />
+      </children>
+   </Pane>
+</VBox>
