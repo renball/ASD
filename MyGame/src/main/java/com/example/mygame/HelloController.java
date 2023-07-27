@@ -34,7 +34,7 @@ public class HelloController {
     @FXML
     private Polygon tip;
     //Arrow arrow =new Arrow(shaft.getLayoutX());
-    double arrX=50;
+    double arrX=150;
 
 
     @FXML
